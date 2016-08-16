@@ -18,8 +18,8 @@ def getShows(listOfShows):
          for j in i:
              if(not "?id=" in j['url']):
                 collectEpisodes(BASE_URL+j['url'])
-total=[]
 def start():                
+    total=[]
     for i in range(START,END):
         try:
             total.append(collectList(readPage(BASE_URL+"AnimeList?page="+str(i))))
