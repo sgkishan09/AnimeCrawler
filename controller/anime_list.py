@@ -1,4 +1,6 @@
 import utils
+from episode_data import *
+from episode_list import *
 from BeautifulSoup import BeautifulSoup
 import pymongo
 
@@ -13,6 +15,7 @@ def get_shows(list_of_shows):
     for i in list_of_shows:
          for j in i:
              if(not "?id=" in j['url']):
+                print j['name']
                 collect_episodes(utils.BASE_URL+j['url'])
 def start():
     total=[]

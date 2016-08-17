@@ -21,5 +21,4 @@ def get_episode_data(links):
         epi['name'] = name
         epi['image_url'] = image_url
         episodes.append(epi)
-
-    print episodes
+    return episodes

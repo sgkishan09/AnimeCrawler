@@ -9,6 +9,6 @@ def collect_episodes(link):
     links = []
     for link in episode_links:
         links.append(utils.BASE_URL + link['href'])
-    episode_data.get_episode_data(links)
+    return episode_data.get_episode_data(links)
 
 #collect_episodes("http://kissanime.to/Anime/hack-Quantum")
